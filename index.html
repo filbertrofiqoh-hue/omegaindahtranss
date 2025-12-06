@@ -1,0 +1,386 @@
+<!doctype html>
+<html lang="id">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Omega Indah Trans</title>
+  <style>
+    :root{--bg:#dff3ff;--text:#0b2545;--card:#ffffff;--accent:#1e90ff}
+    html,body{height:100%;margin:0;font-family:Inter,system-ui,Arial,Helvetica,sans-serif;background:var(--bg);color:var(--text)}
+    .container{max-width:1100px;margin:0 auto;padding:28px}
+    header{display:flex;align-items:center;justify-content:space-between;gap:12px}
+    header img.logo{height:64px}
+    nav a{margin-left:12px;text-decoration:none;color:var(--text);font-weight:600}
+    .hero{background:linear-gradient(180deg, rgba(255,255,255,0.6), rgba(255,255,255,0.3));padding:28px;border-radius:12px;margin-top:18px;text-align:center}
+    .center{text-align:center}
+    .services{display:flex;gap:18px;flex-wrap:wrap;justify-content:center;margin:20px 0}
+    .service{width:300px;background:var(--card);padding:14px;border-radius:10px;box-shadow:0 6px 18px rgba(11,37,69,0.06);text-align:center}
+    .service img{width:100%;height:160px;object-fit:cover;border-radius:8px}
+    .offices{display:flex;flex-wrap:wrap;gap:12px;justify-content:center}
+    .office{background:var(--card);padding:10px;border-radius:8px;min-width:240px;max-width:320px;box-shadow:0 6px 18px rgba(11,37,69,0.06);text-align:center}
+    .fleet{display:flex;flex-wrap:wrap;gap:12px;justify-content:center}
+    .fleet-card{width:48%;background:var(--card);padding:10px;border-radius:10px;box-shadow:0 6px 18px rgba(11,37,69,0.06);display:flex;gap:12px;align-items:center}
+    .fleet-card img{width:140px;height:80px;object-fit:cover;border-radius:6px}
+    .routes-section{margin-top:20px}
+    .routes-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:12px}
+    .route-card{background:var(--card);padding:12px;border-radius:8px;text-align:center}
+    .gallery{display:flex;flex-wrap:wrap;gap:12px}
+    .gal-item{width:48%;background:var(--card);padding:8px;border-radius:8px}
+    /* Traveloka-like booking form */
+    .booking{background:linear-gradient(180deg,#ffffff, #f4fbff);padding:18px;border-radius:12px;box-shadow:0 8px 30px rgba(11,37,69,0.06)}
+    .steps{display:flex;gap:8px;justify-content:space-between;margin-bottom:12px}
+    .step{flex:1;padding:8px;border-radius:8px;background:#eaf6ff;text-align:center;font-weight:700}
+    input,select,textarea{width:100%;padding:8px;margin-top:6px;margin-bottom:12px;border-radius:6px;border:1px solid rgba(11,37,69,0.12)}
+    button{padding:10px 16px;border-radius:8px;border:0;background:var(--accent);color:#fff;font-weight:700;cursor:pointer}
+    .small{font-size:13px}
+    footer{margin-top:28px;text-align:center;padding:18px;color:rgba(11,37,69,0.7)}
+    @media(max-width:880px){.routes-grid{grid-template-columns:1fr}.fleet-card,.gal-item{width:100%}}
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <div style="display:flex;align-items:center;gap:12px">
+        <img src="omega.png.png" alt="Logo Omega Indah Trans" class="logo">
+        <div>
+          <div style="font-size:20px;font-weight:800">OMEGA INDAH TRANS</div>
+          <div style="font-size:12px;color:rgba(11,37,69,0.6)">Solusi Transportasi Lengkap</div>
+        </div>
+      </div>
+      <nav>
+        <a href="#services">Pelayanan</a>
+        <a href="#fleet">Galleri Armada</a>
+        <a href="#routes">Rute Kami</a>
+        <a href="#booking">Pemesanan</a>
+      </nav>
+    </header>
+
+    <section class="hero">
+      <h1>Omega Indah Trans</h1>
+      <p class="center">Visi & Misi Omega Indah Trans</p>
+      <p class="center">Tentang Kami</p>
+      <p>Untuk pemesanan Umroh & Haji, silakan tekan tombol WhatsApp.</p>
+      <p><a href="https://wa.me/62895404019535" target="_blank"><button>Pesan Sekarang via WhatsApp</button></a></p>
+    </section>
+
+    <section id="services">
+      <h2 class="center">PELAYANAN</h2>
+      <div class="services">
+        <div class="service">
+          <img src="cd.jpg" alt="Carter Drop">
+          <h3>Carter Drop</h3>
+          <p>Carter drop dalam dan luar kota — layanan sewa kendaraan untuk tujuan antar-kota atau drop-off sesuai permintaan.</p>
+        </div>
+        <div class="service">
+          <img src="ajb.jpg" alt="Antar Jemput Bandara">
+          <h3>Antar Jemput Bandara</h3>
+          <p>Pelayanan antar jemput bandara dengan driver berpengalaman dan penjemputan tepat waktu.</p>
+        </div>
+        <div class="service">
+          <img src="rental.jpg" alt="Rental harian dan Bulanan">
+          <h3>Rental Harian & Bulanan</h3>
+          <p>Pilihan rental mobil harian dan bulanan untuk kebutuhan pribadi, kantor atau event.</p>
+        </div>
+        <div class="service">
+          <img src="pariwisata.jpg" alt="Pariwisata">
+          <h3>Pariwisata</h3>
+          <p>Paket pariwisata dan tur daerah dengan itinerary yang dapat disesuaikan.</p>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <h2 class="center">Kenapa Memilih Kami?</h2>
+      <p class="center">Omega Indah Trans adalah pilihan terbaik untuk perjalanan Lampung – Palembang, Pekanbaru, Jambi, Jakarta Via Tol karena menawarkan kenyamanan maksimal dengan armada terbaru yang dilengkapi dengan kursi nyaman dan AC dingin, serta driver berpengalaman yang mengutamakan keselamatan penumpang.</p>
+    </section>
+
+    <section>
+      <h2 class="center">KANTOR & LOKET RESMI</h2>
+      <div class="offices">
+        <div class="office"><img src="pekanbaru.jpg" alt="logo" style="height:36px"><h4>Pekanbaru</h4><p>Jl. Durian No.6a, Jadirejo, Kec. Sukajadi, Kota Pekanbaru, Riau 28121</p></div>
+        <div class="office"><img src="jambi.jpg" alt="logo" style="height:36px"><h4>Jambi</h4><p>Jalan Hos Cokrominoto, Kec Kota Baru, Kota Jambi</p></div>
+        <div class="office"><img src="palembang.jpg" alt="logo" style="height:36px"><h4>Palembang</h4><p>Jl. Inspektur Marzuki, Siring Agung, Kec. Ilir Bar. I, Kota Palembang, Sumatera Selatan</p></div>
+        <div class="office"><img src="balam.jpg" alt="logo" style="height:36px"><h4>Bandar Lampung</h4><p>Jl. Beruang No.2, Sukamenanti, Kec. Kedaton, Kota Bandar Lampung, Sumatera Selatan 35125</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="fleet">
+      <h2 class="center">Galleri Armada</h2>
+      <div class="fleet">
+        <div class="fleet-card"><img src="reborn.jpg" alt="Innova Reborn"><div><h4>Innova Reborn</h4><p class="small">Kapasitas nyaman, fitur lengkap.</p></div></div>
+        <div class="fleet-card"><img src="venturer.jpg" alt="Innova Venturer"><div><h4>Innova Venturer</h4><p class="small">Kursi luas, cocok perjalanan jarak jauh.</p></div></div>
+        <div class="fleet-card"><img src="commuter.jpg" alt="Hiace Commuter"><div><h4>Hiace Commuter</h4><p class="small">Armada commuter, banyak tempat duduk.</p></div></div>
+        <div class="fleet-card"><img src="premio.jpg" alt="Hiace Premio"><div><h4>Hiace Premio</h4><p class="small">Kenyamanan ekstra untuk perjalanan premium.</p></div></div>
+        <div class="fleet-card"><img src="luxury.jpg    " alt="Hiace Luxury"><div><h4>Hiace Luxury</h4><p class="small">Pilihan luxury dengan fasilitas ekstra.</p></div></div>
+        <div class="fleet-card"><img src="elf.jpg" alt="Isuzu ELF"><div><h4>Isuzu ELF</h4><p class="small">Armada angkut besar dan handal.</p></div></div>
+      </div>
+    </section>
+
+    <section id="routes" class="routes-section">
+      <h2 class="center">Rute Kami</h2>
+
+      <h3 class="center">Sumatera</h3>
+      <div class="routes-grid">
+        <div class="route-card"><img src="palembang.jpg" alt="Palembang" style="width:100%;height:120px;object-fit:cover;border-radius:6px"><h4>Palembang</h4><p>Palembang — pusat ekonomi dan hub utama Sumatera Selatan.</p></div>
+        <div class="route-card"><img src="lubuklinggau.jpg" alt="Lubuklinggau" style="width:100%;height:120px;object-fit:cover;border-radius:6px"><h4>Lubuklinggau</h4><p>Kota pertambangan dan penghubung antarwilayah.</p></div>
+        <div class="route-card"><img src="jambi.jpg" alt="Jambi" style="width:100%;height:120px;object-fit:cover;border-radius:6px"><h4>Jambi</h4><p>Kota dengan sejarah budaya dan jalur transportasi penting.</p></div>
+        <div class="route-card"><img src="pekanbaru.jpg" alt="Pekanbaru" style="width:100%;height:120px;object-fit:cover;border-radius:6px"><h4>Pekanbaru</h4><p>Centre ekonomi Riau dan akses ke jalur tol.</p></div>
+        <div class="route-card"><img src="medan.jpg" alt="Medan" style="width:100%;height:120px;object-fit:cover;border-radius:6px"><h4>Medan</h4><p>Kota besar Sumatera Utara dengan akses luas.</p></div>
+        <div class="route-card"><img src="aceh.jpg" alt="Aceh" style="width:100%;height:120px;object-fit:cover;border-radius:6px"><h4>Aceh</h4><p>Provinsi ujung utara Sumatera dengan destinasi wisata dan rute darat.</p></div>
+      </div>
+
+      <h3 class="center">Jawa Barat</h3>
+      <div class="routes-grid">
+        <div class="route-card"><img src="bandung.jpg" alt="Bandung" style="width:100%;height:120px;object-fit:cover;border-radius:6px"><h4>Bandung</h4><p>Kota kreatif dan wisata kuliner.</p></div>
+        <div class="route-card"><img src="tasikmalaya,jpg.jpg" alt="Tasikmalaya" style="width:100%;height:120px;object-fit:cover;border-radius:6px"><h4>Tasikmalaya</h4><p>Kota dengan kultur dan wisata alam.</p></div>
+        <div class="route-card"><img src="cirebon.jpg" alt="Cirebon" style="width:100%;height:120px;object-fit:cover;border-radius:6px"><h4>Cirebon</h4><p>Gerbang jalur Pantura.</p></div>
+        <div class="route-card"><img src="subang.jpg" alt="Subang" style="width:100%;height:120px;object-fit:cover;border-radius:6px"><h4>Subang</h4><p>Daerah industri dan pariwisata.</p></div>
+        <div class="route-card"><img src="garut.jpg" alt="Garut" style="width:100%;height:120px;object-fit:cover;border-radius:6px"><h4>Garut</h4><p>Kawasan wisata pegunungan dan kuliner.</p></div>
+        <div class="route-card"><img src="bogor.jpg" alt="Bogor" style="width:100%;height:120px;object-fit:cover;border-radius:6px"><h4>Bogor</h4><p>Agrowisata dan akses ke Jabodetabek.</p></div>
+      </div>
+
+      
+    <section id="booking" style="margin-top:20px">
+      <h2 class="center">Formulir Pemesanan</h2>
+      <div class="booking">
+        <div class="steps">
+          <div id="s1" class="step">1. Isi Formulir</div>
+          <div id="s2" class="step">2. Pilih Armada</div>
+          <div id="s3" class="step">3. Pembayaran</div>
+          <div id="s4" class="step">4. Konfirmasi</div>
+        </div>
+
+        <form id="bookingForm" onsubmit="return false">
+          <div id="step1">
+            <label>Nama Lengkap<input id="name" required placeholder="Nama Lengkap"></label>
+            <label>Nomor Handphone<input id="phone" required placeholder="08..."></label>
+            <label>Tanggal Keberangkatan<input id="date" type="date" required></label>
+            <label>Kota Asal<select id="origin" required></select></label>
+            <label>Kota Tujuan<select id="destination" required></select></label>
+            <label>Jumlah Orang<select id="pax" required></select></label>
+            <label>Catatan<textarea id="note" rows="3" placeholder="Catatan tambahan (opsional)"></textarea></label>
+            <div style="display:flex;gap:8px;justify-content:flex-end"><button type="button" onclick="toStep2()">Lanjut ke Pilih Armada</button></div>
+          </div>
+
+          <div id="step2" style="display:none">
+            <p class="small">Pilih salah satu armada dan tentukan jumlah penumpang yang akan naik.</p>
+            <div id="armadas">
+              <!-- Armada items created by JS -->
+            </div>
+            <div style="display:flex;gap:8px;justify-content:space-between;margin-top:8px">
+              <button type="button" onclick="toStep1()">Kembali</button>
+              <button type="button" onclick="toStep3()">Lanjut ke Pembayaran</button>
+            </div>
+          </div>
+
+          <div id="step3" style="display:none">
+            <h4>Metode Pembayaran (Wajib pilih salah satu)</h4>
+            <label><input type="radio" name="pay" value="dana"> DANA - 0881-5898-569 (Yenny Surya NG)</label>
+            <label><input type="radio" name="pay" value="bca"> BCA - 114-025-5943 (ROFIQOH)</label>
+            <div style="margin-top:12px" id="priceBox"></div>
+            <div style="display:flex;gap:8px;justify-content:space-between;margin-top:8px">
+              <button type="button" onclick="toStep2()">Kembali</button>
+              <button type="button" onclick="toStep4()">Lanjut ke Konfirmasi</button>
+            </div>
+          </div>
+
+          <div id="step4" style="display:none">
+            <h4>Konfirmasi & Kirim ke WhatsApp</h4>
+            <div id="summary"></div>
+            <div style="display:flex;gap:8px;justify-content:space-between;margin-top:8px">
+              <button type="button" onclick="toStep3()">Kembali</button>
+              <button type="button" onclick="confirmBooking()">Konfirmasi via WhatsApp</button>
+            </div>
+          </div>
+        </form>
+      </div>
+    </section>
+
+    <footer>
+      <p>Kontak: Whatsapp: 0895-4040-19535 | Instagram: @Omegaindahtranss | Email: Omegaindah@Trans.com</p>
+    </footer>
+  </div>
+
+  <script>
+    // Simple data store using localStorage
+    const DB_KEY = 'omegaindah_bookings'
+    function saveBooking(obj){
+      const list = JSON.parse(localStorage.getItem(DB_KEY) || '[]')
+      list.push(obj)
+      localStorage.setItem(DB_KEY, JSON.stringify(list))
+    }
+
+    // Populate origin/destination and pax
+    const cities = [
+      'Aceh','Medan','Pekanbaru','Jambi','Palembang','Bandar Lampung','Tangerang','Jakarta','Bandung','Garut','Semarang','Yogyakarta','Surabaya','Malang','Denpasar Bali','Lubuklinggau','Bengkulu','Padang','Tangerang','Bogor','Cirebon','Tasikmalaya','Pemalang','Cilacap','Solo','Sragen','Kediri','Banyuwangi','Gilimanuk','Pasuruan','Benoa','Bangli','Buleleng','Singaraja','Karang Asem'
+    ]
+    const originEl = document.getElementById('origin')
+    const destEl = document.getElementById('destination')
+    cities.forEach(c=>{
+      const o = document.createElement('option'); o.value = c; o.textContent = c; originEl.appendChild(o)
+      const d = document.createElement('option'); d.value = c; d.textContent = c; destEl.appendChild(d)
+    })
+    const pax = document.getElementById('pax')
+    for(let i=1;i<=30;i++){const opt=document.createElement('option');opt.value=i;opt.text=i;pax.appendChild(opt)}
+
+    // Armada list
+    const armadas = [
+      {id:'innova_reborn',name:'Innova Reborn',img:'assets/innova_reborn.jpg',desc:'Susunan kursi dengan lorong.'},
+      {id:'innova_venturer',name:'Innova Venturer',img:'assets/innova_venturer.jpg',desc:'Susunan kursi dengan lorong.'},
+      {id:'hiace_commuter',name:'Hiace Commuter',img:'assets/hiace_commuter.jpg',desc:'Susunan kursi dengan lorong.'},
+      {id:'hiace_premio',name:'Hiace Premio',img:'assets/hiace_premio.jpg',desc:'Susunan kursi dengan lorong.'},
+      {id:'hiace_luxury',name:'Hiace Luxury',img:'assets/hiace_luxury.jpg',desc:'Susunan kursi dengan lorong.'},
+      {id:'isuzu_elf',name:'Isuzu ELF',img:'assets/isuzu_elf.jpg',desc:'Kendaraan angkut besar.'}
+    ]
+    const armadasContainer = document.getElementById('armadas')
+    armadas.forEach(a=>{
+      const wrap = document.createElement('div'); wrap.style.border='1px solid rgba(11,37,69,0.06)';wrap.style.padding='8px';wrap.style.marginBottom='8px';wrap.style.borderRadius='8px';wrap.style.display='flex';wrap.style.gap='10px';wrap.style.alignItems='center'
+      wrap.innerHTML = `<img src="${a.img}" alt="${a.name}" style="width:160px;height:86px;object-fit:cover;border-radius:6px"><div style="flex:1"><h4 style="margin:0">${a.name}</h4><p class="small" style="margin:6px 0">${a.desc}</p><label><input type=radio name=armada value='${a.id}'> Pilih ${a.name}</label></div>`
+      armadasContainer.appendChild(wrap)
+    })
+
+    // Price mapping (key: Origin-Destination)
+    const prices = {
+      "Aceh-Medan":400000,"Aceh-Pekanbaru":800000,"Aceh-Jambi":1050000,"Aceh-Padang":1400000,"Aceh-Lubuklinggau":1600000,
+      "Medan-Bengkulu":1750000,"Aceh-Palembang":1230000,"Aceh-Bandar Lampung":1480000,"Aceh-Tangerang":1830000,"Aceh-Jakarta":1850000,
+      "Aceh-Bandung":1950000,"Aceh-Bogor":2050000,"Aceh-Garut":2100000,"Aceh-Semarang":2200000,"Aceh-Yogyakarta":2350000,
+      "Aceh-Surabaya":2550000,"Aceh-Malang":2700000,"Aceh-Denpasar Bali":2950000,
+      "Medan-Aceh":400000,"Medan-Pekanbaru":400000,"Medan-Lubuklinggau":650000,"Medan-Padang":600000,"Medan-Bengkulu":750000,
+      "Medan-Jambi":650000,"Medan-Palembang":830000,"Medan-Bandar Lampung":1150000,"Medan-Jakarta":1500000,"Medan-Bandung":1650000,
+      "Medan-Bogor":1700000,"Medan-Garut":1800000,"Medan-Semarang":1900000,"Medan-Yogyakarta":2100000,"Medan-Surabaya":2300000,
+      "Medan-Malang":2450000,"Medan-Denpasar Bali":2700000,
+      "Pekanbaru-Medan":400000,"Pekanbaru-Aceh":400000,"Pekanbaru-Padang":250000,"Pekanbaru-Lubuklinggau":430000,"Pekanbaru-Bengkulu":550000,
+      "Pekanbaru-Jambi":270000,"Pekanbaru-Palembang":450000,"Pekanbaru-Bandar Lampung":700000,"Pekanbaru-Tangerang":1050000,"Pekanbaru-Jakarta":1050000,
+      "Pekanbaru-Bandung":1150000,"Pekanbaru-Bogor":1250000,"Pekanbaru-Garut":1350000,"Pekanbaru-Semarang":1350000,"Pekanbaru-Yogyakarta":1500000,
+      "Pekanbaru-Surabaya":1700000,"Pekanbaru-Malang":1850000,"Pekanbaru-Denpasar Bali":2100000,
+      "Jambi-Pekanbaru":270000,"Jambi-Medan":670000,"Jambi-Aceh":1070000,"Jambi-Lubuklinggau":180000,"Jambi-Padang":430000,
+      "Jambi-Bengkulu":250000,"Jambi-Palembang":180000,"Jambi-Bandar Lampung":430000,"Jambi-Tangerang":780000,"Jambi-Jakarta":780000,
+      "Jambi-Bandung":860000,"Jambi-Garut":1000000,"Jambi-Bogor":950000,"Jambi-Semarang":1000000,"Jambi-Yogyakarta":1200000,
+      "Jambi-Surabaya":1400000,"Jambi-Malang":1550000,"Jambi-Denpasar Bali":1800000,
+      "Palembang-Jambi":180000,"Palembang-Pekanbaru":470000,"Palembang-Medan":870000,"Palembang-Aceh":1270000,"Palembang-Lubuklinggau":180000,
+      "Palembang-Padang":550000,"Palembang-Bengkulu":300000,"Palembang-Bandar Lampung":250000,"Palembang-Jakarta":600000,"Palembang-Tangerang":600000,
+      "Palembang-Bogor":650000,"Palembang-Garut":700000,"Palembang-Semarang":800000,"Palembang-Yogyakarta":1000000,"Palembang-Surabaya":1200000,
+      "Palembang-Malang":1350000,"Palembang-Denpasar Bali":1550000,
+      "Bandar Lampung-Palembang":250000,"Bandar Lampung-Jambi":430000,"Bandar Lampung-Pekanbaru":650000,"Bandar Lampung-Lubuklinggau":350000,"Bandar Lampung-Padang":700000,
+      "Bandar Lampung-Bengkulu":500000,"Bandar Lampung-Medan":1050000,"Bandar Lampung-Aceh":1050000,"Bandar Lampung-Tangerang":300000,"Bandar Lampung-Jakarta":350000,
+      "Bandar Lampung-Bandung":500000,"Bandar Lampung-Bogor":550000,"Bandar Lampung-Garut":600000,"Bandar Lampung-Semarang":650000,"Bandar Lampung-Yogyakarta":800000,
+      "Bandar Lampung-Surabaya":1000000,"Bandar Lampung-Malang":1150000,"Bandar Lampung-Denpasar Bali":1350000,
+      "Tangerang-Bandar Lampung":350000,"Tangerang-Palembang":600000,"Tangerang-Lubuklinggau":700000,"Tangerang-Bengkulu":750000,"Tangerang-Padang":1050000,
+      "Tangerang-Jambi":780000,"Tangerang-Pekanbaru":950000,"Tangerang-Medan":1350000,"Tangerang-Aceh":1750000,"Tangerang-Bandung":250000,
+      "Tangerang-Garut":250000,"Tangerang-Bogor":250000,"Tangerang-Semarang":400000,"Tangerang-Yogyakarta":450000,"Tangerang-Surabaya":600000,
+      "Tangerang-Denpasar Bali":800000,
+      "Jakarta-Bandar Lampung":350000,"Jakarta-Palembang":600000,"Jakarta-Lubuklinggau":700000,"Jakarta-Bengkulu":750000,"Jakarta-Padang":1050000,
+      "Jakarta-Jambi":780000,"Jakarta-Pekanbaru":950000,"Jakarta-Medan":1350000,"Jakarta-Aceh":1750000,"Jakarta-Bandung":250000,
+      "Jakarta-Garut":250000,"Jakarta-Bogor":250000,"Jakarta-Semarang":400000,"Jakarta-Yogyakarta":450000,"Jakarta-Surabaya":600000,
+      "Jakarta-Malang":650000,"Jakarta-Denpasar Bali":800000,
+      "Bandung-Jakarta":250000,"Bandung-Tangerang":300000,"Bandung-Bogor":200000,"Bandung-Garut":200000,"Bandung-Bandar Lampung":650000,
+      "Bandung-Lubuklinggau":900000,"Bandung-Bengkulu":1000000,"Bandung-Padang":1200000,"Bandung-Palembang":600000,"Bandung-Jambi":780000,
+      "Bandung-Pekanbaru":1050000,"Bandung-Medan":1450000,"Bandung-Aceh":1850000,"Bandung-Semarang":400000,"Bandung-Yogyakarta":500000,
+      "Bandung-Surabaya":550000,"Bandung-Malang":700000,"Bandung-Denpasar Bali":800000,
+      "Garut-Bandung":200000,"Garut-Jakarta":250000,"Garut-Tangerang":300000,"Garut-Bandar Lampung":650000,"Garut-Lubuklinggau":1000000,
+      "Garut-Bengkulu":1050000,"Garut-Padang":1350000,"Garut-Palembang":800000,"Garut-Jambi":980000,"Garut-Pekanbaru":1200000,
+      "Garut-Medan":1600000,"Garut-Aceh":2000000,"Garut-Semarang":400000,"Garut-Yogyakarta":500000,"Garut-Surabaya":600000,
+      "Garut-Malang":700000,"Garut-Denpasar Bali":800000,
+      "Semarang-Bandar Lampung":800000,"Semarang-Lubuklinggau":1150000,"Semarang-Bengkulu":1200000,"Semarang-Padang":1550000,"Semarang-Palembang":1050000,
+      "Semarang-Jambi":1230000,"Semarang-Pekanbaru":1500000,"Semarang-Medan":1900000,"Semarang-Aceh":2300000,"Semarang-Jakarta":400000,
+      "Semarang-Tangerang":450000,"Semarang-Bogor":450000,"Semarang-Bandung":400000,"Semarang-Garut":400000,"Semarang-Yogyakarta":200000,
+      "Semarang-Surabaya":350000,"Semarang-Malang":450000,"Semarang-Denpasar Bali":600000,
+      "Yogyakarta-Surabaya":250000,"Yogyakarta-Malang":350000,"Yogyakarta-Denpasar Bali":500000,"Yogyakarta-Semarang":200000,"Yogyakarta-Garut":450000,
+      "Yogyakarta-Bogor":450000,"Yogyakarta-Jakarta":450000,"Yogyakarta-Tangerang":500000,"Yogyakarta-Bandar Lampung":850000,
+      "Yogyakarta-Lubuklinggau":1100000,"Yogyakarta-Bengkulu":1200000,"Yogyakarta-Padang":1450000,"Yogyakarta-Palembang":1000000,
+      "Yogyakarta-Jambi":1180000,"Yogyakarta-Pekanbaru":1430000,"Yogyakarta-Medan":1830000,"Yogyakarta-Aceh":2330000,
+      "Surabaya-Denpasar Bali":300000,"Surabaya-Yogyakarta":250000,"Surabaya-Malang":150000,"Surabaya-Semarang":400000,"Surabaya-Bandung":550000,
+      "Surabaya-Garut":550000,"Surabaya-Bogor":550000,"Surabaya-Tangerang":550000,"Surabaya-Bandar Lampung":900000,"Surabaya-Palembang":1050000,
+      "Surabaya-Jambi":1230000,"Surabaya-Pekanbaru":1480000,"Surabaya-Medan":1880000,"Surabaya-Aceh":2280000,"Surabaya-Lubuklinggau":1200000,
+      "Surabaya-Bengkulu":1250000,"Surabaya-Padang":1600000,
+      "Malang-Denpasar Bali":250000,"Malang-Surabaya":150000,"Malang-Yogyakarta":350000,"Malang-Semarang":500000,"Malang-Bandung":600000,
+      "Malang-Bogor":650000,"Malang-Garut":650000,"Malang-Jakarta":600000,"Malang-Tangerang":650000,"Malang-Bandar Lampung":1000000,
+      "Malang-Palembang":1250000,"Malang-Jambi":1430000,"Malang-Pekanbaru":1780000,"Malang-Medan":2180000,"Malang-Aceh":2580000,
+      "Malang-Lubuklinggau":1350000,"Malang-Bengkulu":1400000,
+      "Denpasar Bali-Malang":250000,"Denpasar Bali-Surabaya":300000,"Denpasar Bali-Yogyakarta":450000,"Denpasar Bali-Semarang":500000,"Denpasar Bali-Bandung":650000,
+      "Denpasar Bali-Bogor":650000,"Denpasar Bali-Garut":650000,"Denpasar Bali-Jakarta":800000,"Denpasar Bali-Tangerang":800000,"Denpasar Bali-Bandar Lampung":1150000,
+      "Denpasar Bali-Lubuklinggau":1500000,"Denpasar Bali-Bengkulu":1550000,"Denpasar Bali-Padang":1850000,"Denpasar Bali-Palembang":1400000,
+      "Denpasar Bali-Jambi":1580000,"Denpasar Bali-Pekanbaru":1800000,"Denpasar Bali-Medan":2200000,"Denpasar Bali-Aceh":2600000
+    }
+
+    function getPrice(o,d){
+      if(o===d) return 0
+      const key = `${o}-${d}`
+      return prices[key] || null
+    }
+
+    function toStep1(){document.getElementById('step1').style.display='block';document.getElementById('step2').style.display='none';document.getElementById('step3').style.display='none';document.getElementById('step4').style.display='none'}
+    function toStep2(){
+      // validate step1
+      const name=document.getElementById('name').value.trim();const phone=document.getElementById('phone').value.trim();const date=document.getElementById('date').value
+      const o=document.getElementById('origin').value;const d=document.getElementById('destination').value;const pax=document.getElementById('pax').value
+      if(!name||!phone||!date||!o||!d||!pax){alert('Lengkapi semua field di langkah 1');return}
+      // move
+      document.getElementById('step1').style.display='none';document.getElementById('step2').style.display='block';document.getElementById('step3').style.display='none';document.getElementById('step4').style.display='none'
+    }
+    function toStep3(){
+      // must choose armada
+      const arm = document.querySelector('input[name=armada]:checked')
+      if(!arm){alert('Pilih salah satu armada');return}
+      // must pick pax already chosen in step1
+      document.getElementById('step1').style.display='none';document.getElementById('step2').style.display='none';document.getElementById('step3').style.display='block';document.getElementById('step4').style.display='none'
+      updatePriceBox()
+    }
+    function toStep4(){
+      const pay = document.querySelector('input[name=pay]:checked')
+      if(!pay){alert('Pilih metode pembayaran');return}
+      document.getElementById('step1').style.display='none';document.getElementById('step2').style.display='none';document.getElementById('step3').style.display='none';document.getElementById('step4').style.display='block'
+      buildSummary()
+    }
+
+    function updatePriceBox(){
+      const o=document.getElementById('origin').value;const d=document.getElementById('destination').value;const pax=document.getElementById('pax').value
+      const p = getPrice(o,d)
+      const box = document.getElementById('priceBox')
+      if(p==null){box.innerHTML=`<p class="small">Maaf, harga untuk rute ${o} - ${d} belum tersedia. Silakan hubungi admin.</p>`;return}
+      const total = p * parseInt(pax)
+      box.innerHTML=`<p>Harga per orang: Rp ${p.toLocaleString('id-ID')}<br><strong>Total (x${pax}): Rp ${total.toLocaleString('id-ID')}</strong></p>`
+    }
+
+    function buildSummary(){
+      const name=document.getElementById('name').value;const phone=document.getElementById('phone').value;const date=document.getElementById('date').value
+      const o=document.getElementById('origin').value;const d=document.getElementById('destination').value;const pax=document.getElementById('pax').value;const note=document.getElementById('note').value
+      const arm = document.querySelector('input[name=armada]:checked').value
+      const armObj = armadas.find(a=>a.id===arm)
+      const pay = document.querySelector('input[name=pay]:checked').value
+      const p = getPrice(o,d) || 0
+      const total = p * parseInt(pax)
+      const payLabel = pay==='dana' ? 'DANA - 0881-5898-569 (Yenny Surya NG)' : 'BCA - 114-025-5943 (ROFIQOH)'
+      const summary = document.getElementById('summary')
+      summary.innerHTML = `<p><strong>Nama:</strong> ${name}<br><strong>HP:</strong> ${phone}<br><strong>Tanggal:</strong> ${date}<br><strong>Rute:</strong> ${o} → ${d} (${p?('Rp '+p.toLocaleString('id-ID')+'/org'):'Harga tanya'})<br><strong>Jumlah:</strong> ${pax}<br><strong>Armada:</strong> ${armObj.name}<br><strong>Metode Bayar:</strong> ${payLabel}<br><strong>Total:</strong> Rp ${total.toLocaleString('id-ID')}<br><strong>Catatan:</strong> ${note||'-'}</p>`
+    }
+
+    function confirmBooking(){
+      // Build message and open wa
+      const name=document.getElementById('name').value;const phone=document.getElementById('phone').value;const date=document.getElementById('date').value
+      const o=document.getElementById('origin').value;const d=document.getElementById('destination').value;const pax=document.getElementById('pax').value;const note=document.getElementById('note').value
+      const arm = document.querySelector('input[name=armada]:checked').value
+      const armObj = armadas.find(a=>a.id===arm)
+      const pay = document.querySelector('input[name=pay]:checked').value
+      const payLabel = pay==='dana' ? 'DANA - 0881-5898-569 (Yenny Surya NG)' : 'BCA - 114-025-5943 (ROFIQOH)'
+      const p = getPrice(o,d) || 0
+      const total = p * parseInt(pax)
+      const message = encodeURIComponent(`Pemesanan Omega Indah Trans%0ANama: ${name}%0AHP: ${phone}%0ATanggal: ${date}%0ARute: ${o} -> ${d}%0AJumlah: ${pax}%0AArmada: ${armObj.name}%0AMetode Bayar: ${payLabel}%0ATotal: Rp ${total.toLocaleString('id-ID')}%0ACatatan: ${note || '-'}%0A`)
+      // Save booking locally
+      saveBooking({name,phone,date,origin:o,destination:d,pax,armada:armObj.name,payment:payLabel,total,note})
+      // Open whatsapp
+      window.open('https://wa.me/62895404019535?text='+message,'_blank')
+    }
+
+    // Initialize summary & UI
+    toStep1()
+
+    // Attach listener to origin/destination change to update price in step3
+    document.getElementById('origin').addEventListener('change',updatePriceBox)
+    document.getElementById('destination').addEventListener('change',updatePriceBox)
+    document.getElementById('pax').addEventListener('change',updatePriceBox)
+
+  </script>
+</body>
+</html>
