@@ -177,7 +177,6 @@
           <div id="step3" style="display:none">
             <h4>Metode Pembayaran (Wajib pilih salah satu)</h4>
             <label><input type="radio" name="pay" value="dana"> DANA - 0881-5898-569 (Yenny Surya NG)</label>
-            <label><input type="radio" name="pay" value="bca"> BCA - 114-025-5943 (ROFIQOH)</label>
             <div style="margin-top:12px" id="priceBox"></div>
             <div style="display:flex;gap:8px;justify-content:space-between;margin-top:8px">
               <button type="button" onclick="toStep2()">Kembali</button>
@@ -351,7 +350,7 @@
       const pay = document.querySelector('input[name=pay]:checked').value
       const p = getPrice(o,d) || 0
       const total = p * parseInt(pax)
-      const payLabel = pay==='dana' ? 'DANA - 0881-5898-569 (Yenny Surya NG)' : 'BCA - 114-025-5943 (ROFIQOH)'
+      const payLabel = pay==='dana' ? 'DANA - 0881-5898-569 (Yenny Surya NG)' 
       const summary = document.getElementById('summary')
       summary.innerHTML = `<p><strong>Nama:</strong> ${name}<br><strong>HP:</strong> ${phone}<br><strong>Tanggal:</strong> ${date}<br><strong>Rute:</strong> ${o} → ${d} (${p?('Rp '+p.toLocaleString('id-ID')+'/org'):'Harga tanya'})<br><strong>Jumlah:</strong> ${pax}<br><strong>Armada:</strong> ${armObj.name}<br><strong>Metode Bayar:</strong> ${payLabel}<br><strong>Total:</strong> Rp ${total.toLocaleString('id-ID')}<br><strong>Catatan:</strong> ${note||'-'}</p>`
     }
@@ -363,7 +362,7 @@
       const arm = document.querySelector('input[name=armada]:checked').value
       const armObj = armadas.find(a=>a.id===arm)
       const pay = document.querySelector('input[name=pay]:checked').value
-      const payLabel = pay==='dana' ? 'DANA - 0881-5898-569 (Yenny Surya NG)' : 'BCA - 114-025-5943 (ROFIQOH)'
+      const payLabel = pay==='dana' ? 'DANA - 0881-5898-569 (Yenny Surya NG)' :
       const p = getPrice(o,d) || 0
       const total = p * parseInt(pax)
       const message = encodeURIComponent(`Pemesanan Omega Indah Trans%0ANama: ${name}%0AHP: ${phone}%0ATanggal: ${date}%0ARute: ${o} -> ${d}%0AJumlah: ${pax}%0AArmada: ${armObj.name}%0AMetode Bayar: ${payLabel}%0ATotal: Rp ${total.toLocaleString('id-ID')}%0ACatatan: ${note || '-'}%0A`)
